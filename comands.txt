@@ -1,3 +1,4 @@
+Say something whit mac voice
 say *******
 
 set time of security backup
