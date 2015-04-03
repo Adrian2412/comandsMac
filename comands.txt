@@ -1,0 +1,69 @@
+say *******
+
+set time of security backup
+sudo defaults write /System/Library/LaunchDaemons/
+com.apple.backupd-auto StartInterval -int 1800
+
+Personal message
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText “Your message”
+
+Console games
+1.- cd /usr/share/emacs/
+2.-ls
+3.- ls /usr/share/emacs/*your version*/lisp/play
+4.-Press scape, X, the name of the game, return
+
+Big dock
+defaults write com.apple.dock largesize -int 512; killall Dock
+
+New tipe of list
+defaults write com.apple.dock use-new-list-stack -boolean YES; killall Dock
+
+webInspector
+defaults write com.apple.Safari WebKitDeveloperExtras -bool true
+
+Debug menu at ICal
+defaults write com.apple.iCal IncludeDebugMenu YES
+
+Debug menu at contacts
+defaults write com.apple.addressbook ABShowDebugMenu -bool YES
+
+Dev menu at safari
+defaults write com.apple.safari IncludeInternalDebugMenu 1
+
+X-ray folders
+defaults write com.apple.finder QLEnableXRayFolders -boolean YES
+
+Recent and favorite at the dock
+defaults write com.apple.dock persistent-others -array-add
+'{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
+
+Stack items ilumination
+defaults write com.apple.dock mouse-over-hilite-stack -boolean YES; killall Dock
+
+Transparent dock
+defaults write com.apple.dock no-glass -boolean YES; killall Dock
+
+Personal music search
+defaults write com.apple.iTunes invertStoreLinks -bool YES
+
+widgets at the dashboard
+defaults write com.apple.dashboard devmode YES
+
+Biger save as... menu
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE
+
+quick acces to the screen
+defaults write com.apple.ScreenSharing controlObserveQuality 1
+
+Personal name for the screenshots
+defaults write com.apple.screencapture name “image”; killall SystemUIServer
+
+Hiden archives
+defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
+
+Star wars ASCII
+telnet towel.blinkenlights.nl
+
+Close the finder an an app
+defaults write com.apple.finder QuitMenuItem -bool YES; killall Finder
